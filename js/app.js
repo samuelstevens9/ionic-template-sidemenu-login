@@ -38,7 +38,7 @@ angular.module('starter', ['ionic', 'ionic.utils', 'starter.controllers','starte
       }
     }
   })
-  .state('app.browse', {
+  .state('app.details', {
     url: "/browse/:id",
     views: {
       'menuContent': {
@@ -49,5 +49,5 @@ angular.module('starter', ['ionic', 'ionic.utils', 'starter.controllers','starte
   })
   ;
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/browse');
+  $urlRouterProvider.otherwise('/app/browse');
 });
